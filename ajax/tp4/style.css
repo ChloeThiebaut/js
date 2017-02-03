@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #BCBBBB;
+}
+
+/*index*/
+#searchbar{
+    background-color: #8C8C8C;
+}
+
+.filmIndex{
+    width: 45%;
+    height: 20%;
+    background-color: white;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    
+}
+.detailsFilmIndex {
+    padding: 1%;
+}
+
+.detailsFilmIndex a{ 
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 5%;
+}
+
+.filmIndex img{}
+
+.detailsFilmIndex p{font-size: 1em;}
+
+
+/*detail*/
+
+.detailsFilm{
+    margin: 3% auto;
+    background-color: white;  }
+
+.details{
+    width: 40%;
+}
+
+li{clear: both;}
+
+.btn a {
+    color: white;
+}
