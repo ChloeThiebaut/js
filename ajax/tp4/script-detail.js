@@ -8,7 +8,7 @@ $(function(){
         $('.affiche').attr("src","http://image.tmdb.org/t/p/w500/"+movie.poster_path);
         $('.affiche').attr("alt",movie.title);
         $('.synopsis').html(movie.overview);
-        $("<li>").text("Budget : "+movie.budget+" $").appendTo(".detailsFilm");
+        $("<li>").text("Budget : "+movie.budget+" $").appendTo(".infos");
 
         // affichage des genres
         var genreGeneral=movie.genres.length;
@@ -20,7 +20,7 @@ $(function(){
                 genres=genres+", ";
             }
         }
-        $("<li>").text("Genres : "+genres).appendTo(".detailsFilm");
+        $("<li>").text("Genres : "+genres).appendTo(".infos");
 
         //affichage producteurs
         var producGeneral=movie.production_companies.length;
@@ -32,11 +32,11 @@ $(function(){
                 producteurs=producteurs+", ";
             }
         }
-        $("<li>").text("Producteurs : "+producteurs).appendTo(".detailsFilm");
-        $("<li>").text("Langue originale : "+movie.original_language).appendTo(".detailsFilm");
-        $("<li>").text("Titre original : "+movie.original_title).appendTo(".detailsFilm");
-        $("<li>").text("Date de sortie : "+movie.release_date).appendTo(".detailsFilm");
-        $("<li>").text("Note : "+movie.vote_average).appendTo(".detailsFilm");
+        $("<li>").text("Producteurs : "+producteurs).appendTo(".infos");
+        $("<li>").text("Langue originale : "+movie.original_language).appendTo(".infos");
+        $("<li>").text("Titre original : "+movie.original_title).appendTo(".infos");
+        $("<li>").text("Date de sortie : "+movie.release_date).appendTo(".infos");
+        $("<li>").text("Note : "+movie.vote_average).appendTo(".infos");
 
     });
 });
