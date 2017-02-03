@@ -12,21 +12,27 @@ html, body {
 .filmIndex{
     width: 45%;
     height: 20%;
-    margin: 2%;
     background-color: white;
+    margin: 2%;
     display: flex;
     flex-direction: row;
     float: left;
-    overflow:scroll;
+    
 }
-.detailsFilmIndex {padding: 1%;}
+.detailsFilmIndex {
+    padding: 1%;
+}
+
 .detailsFilmIndex a{ 
     text-align: center;
     font-size: 1.5em;
     margin-left: 5%;
 }
 
+.filmIndex img{}
+
 .detailsFilmIndex p{font-size: 1em;}
+
 
 /*detail*/
 
@@ -37,4 +43,9 @@ html, body {
 .details{
     width: 40%;
 }
+
 li{clear: both;}
+
+.btn a {
+    color: white;
+}
